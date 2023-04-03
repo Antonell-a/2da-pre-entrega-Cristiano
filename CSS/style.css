@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********INICIO*******/
+
+
+
+header{
+    background-color: rgb(234, 202, 228);
+    height: 11.85%;
+}
+
+nav{
+height: 100%;
+
+}
+
+.nav_padre{                                    
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+.menu_padre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+nav ul li{
+    list-style: none;
+}
+.menu_hijo{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+.menu_hijo_2{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+
+
+.arriba {
+    color: white;
+    width: 100%;
+    height: 20%;
+
+}
+
+
+.medio {
+    background-image: url(https://live.staticflickr.com/2704/4260762246_235d5261a7_z.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    background-position: 200px;
+    margin-top: 50px;
+}
+
+
+.medio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+h3 {
+    font-size: 40px;
+
+}
+
+
+
+footer{
+    background-color: rgb(234, 202, 228);
+}
+
+
+
+/*********CASAMIENTOS*********/
+
+.main_boda_img{
+    background: url(../imagenes/boda3.jpg) no-repeat center top 50px / 100% 50%;
+}
+
+
+.casamiento_titulo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    color: rgb(0, 0, 0);
+}
+
+.infoyserv{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.informacion_boda{
+    font-size: small;
+    font-style: oblique;
+    font-family: 'Lucida Sans';
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    width: 320px;
+    height: 155px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    place-self: center;
+    background-color: rgb(234, 202, 228);
+
+}
+
+.parrafo_boda{
+    font-size:small;
+}
+
+
+.servicios_boda{
+    font-size: small;
+    font-style: oblique;
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    place-self: center;
+    background-color: rgb(234, 202, 228);
+
+}
+
+
+.lista_boda{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: dashed; 
+    margin: 0 20px 0 20px;
+}
+
+.consultanos_boda{
+    display: flex;
+    place-content: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+
+
+/*********CUMPLE DE 15**********/
+
+.header_fiesta15{
+    background-color: rgb(229, 135, 166)
+}
+
+.main_fiesta15_img{
+    background: url(../imagenes/15años.jpg) no-repeat center top 50px / 100% 50%;
+
+}
+
+.fiesta15_titulo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    color: white;
+}
+
+.contenedorpadre_fiesta15{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contenedorhijo_fiesta15{
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-style: oblique;
+    margin-bottom: 20%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    place-self: center;
+    border: solid black 1px;
+    background-color: rgb(229, 135, 166)
+
+}
+.contenedorhijodos_fiesta15{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 60%;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    place-self: center;
+    border: solid black 1px;
+}
+
+.ofrecemos_fiesta15{
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.lista_fiesta15{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 0;
+}
+
+.consultanos_fiesta15{
+    display: flex;
+    place-content: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.footer_fiesta15{
+    background-color: rgb(229, 135, 166)
+}
+
+/********FIESTAS INFANTILES*******/
+
+.header_fiestasinfantiles{
+    background-color: rgb(167, 234, 167);
+}
+
+.main_fiestasinfantiles_img{
+    background: url(../imagenes/dino.jpg) no-repeat center top 50px / 100% 50%;
+    background-color: lightskyblue;
+}
+
+.cumple_infantil{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    width: 75%;
+    color: white;
+}
+
+.footer_fiestasinfantiles{
+    background-color: rgb(167, 234, 167);
+}
+
+
+
+/************CONTACTO*************/
+
+
+.header_contacto{
+    background-color: rgb(0, 0, 0);
+    height:10% ;
+}
+
+
+.main_contacto{
+    background-color: rgb(170, 166, 166);
+    height:73%;
+
+}
+
+
+.footer_contacto{
+    background-color: grey;
+
+}
+
+
+.form{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(242, 242, 238);
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 340px;
+    height: 435px;
+    margin-top: 60px;
+}
+
+
+.titulo_contacto{
+    position: relative;
+    text-align: center;
+    background-color: grey;
+    color:  rgb(239, 239, 233); 
+    margin-top: 0;
+}
+
+
+.name{
+
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 30px;
+    border: black solid 1px;
+}
+
+.phone{
+
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 30px;
+    border: black solid 1px;
+}
+
+.email{
+
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 30px;
+    border: black solid 1px;
+}
+
+.text{
+
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+    border: black solid 1px;
+}
+
+.submit{
+
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    font-weight: 200;
+    font-size: medium;
+    width: 120px;
+    height: 30px;
+    border: black solid 2px;
+}
+
+.submit:hover{
+    width: 25vh;
+    height: 5vh;
+
+}
+.menu_principal{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/********FOOTER*********/
+
+.footer_padre{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.contacto{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: small;
+    padding-left: 30px;
+
+}
+.entre_rios{
+    grid-column: 2/3;
+    grid-row: 1/2;    
+    place-self: center;
+    text-align: center; 
+
+}
+.seguinos_redes{
+    font-size: 11px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: end;
+    padding-right: 30px;
+}
+
+/******MEDIA QUERYS******/
+
+/******INDEX******/
+
+    @media (max-width: 498px) {
+    /* .menu_padre {
+    flex-direction: column;
+    } */
+    .nav_padre {
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_padre {
+    margin-top: 20px;
+    flex-direction: column;
+    color: rgb(8, 8, 8);
+    background-color: pink;
+    z-index: 100;
+    }
+    .entre_rios{
+        display: none;
+    }
+    .footer_padre {
+    display: flex;
+    flex-direction: column;
+    }
+
+.contacto{                                
+        font-size: small;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid black;
+        padding-left: 0;
+        place-self: center;
+    }
+    
+.seguinos_redes{
+        flex-direction: row;
+        align-items: center; 
+        border: 1px solid black;
+        padding-right: 0;
+        place-self: center;
+    }
+
+    .casamiento_titulo{
+        font-size: 40px;
+        padding-top: 270px;
+
+    }
+
+    .infoyserv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30%;
+    }
+    
+    .consultanos_boda{
+        display: none;
+    }
+    
+    .servicios_boda{
+        margin-bottom: 20px;
+    }
+
+    .consultanos_fiesta15{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/***********************************/
+
+
+
