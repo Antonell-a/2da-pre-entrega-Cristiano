@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,7 @@
 /********INICIO*******/
 header {
   background-color: rgb(234, 202, 228);
-  height: 11.85%;
+  height: 80px;
 }
 
 nav {
@@ -45,7 +44,7 @@ nav ul li {
   list-style: none;
   color: black;
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: oblique;
 }
 
@@ -61,7 +60,7 @@ nav ul li {
   width: 100%;
   height: 80%;
   background-position: 200px;
-  margin-top: 50px;
+  margin: 30px 0 30px 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -72,21 +71,22 @@ nav ul li {
 
 .medio h1:hover {
   font-size: 100px;
-  transition: all 0.9s;
 }
 
 .medio h3:hover {
   font-size: 100px;
-  transition: all 0.9s;
 }
 
 h1 {
   font-size: 50px;
-  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.9s;
 }
 
 h3 {
   font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  transition: all 0.9s;
 }
 
 footer {
@@ -95,7 +95,8 @@ footer {
 
 /*********CASAMIENTOS*********/
 .main_boda_img {
-  background: url(../imagenes/boda3.jpg) no-repeat center top 50px/100% 50%;
+  background: url(../imagenes/boda3.jpg) no-repeat center top 10px/100% 50%;
+  background-size: cover;
 }
 
 .casamiento_titulo {
@@ -103,14 +104,14 @@ footer {
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 30%;
   color: black;
+  transition: 0.9s;
 }
 
 .casamiento_titulo:hover {
-  font-size: 150px;
-  transition: 0.9s;
-  padding-top: 140px;
+  font-size: 100px;
 }
 
 .infoyserv {
@@ -127,13 +128,14 @@ footer {
   flex-direction: column;
   margin-bottom: 5%;
   width: 320px;
-  height: 155px;
+  height: 170px;
   grid-column: 1/2;
   grid-row: 2/3;
   place-self: center;
   background-color: rgb(234, 202, 228);
   border-radius: 15px;
   padding: 5px 0 0 10px;
+  line-height: 18px;
 }
 
 .titulo_casamiento {
@@ -169,39 +171,34 @@ footer {
   padding-bottom: 10px;
 }
 
-.consultanos_boda {
-  display: flex;
-  place-content: center;
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
 /*********CUMPLE DE 15**********/
 .header_fiesta15 {
   background-color: rgb(229, 135, 166);
 }
 
 .main_fiesta15_img {
-  background: url(../imagenes/15años.jpg) no-repeat center top 50px/100% 50%;
+  background: url(../imagenes/chicas15.jpg) no-repeat center top 10px/100% 50%;
+  background-size: cover;
 }
 
 .fiesta15_titulo {
   display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   align-items: center;
   justify-content: center;
   height: 45%;
   color: white;
+  transition: 0.9s;
 }
 
 .fiesta15_titulo:hover {
   font-size: 100px;
-  transition: 0.9s;
 }
 
 .contenedorpadre_fiesta15 {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
@@ -209,26 +206,25 @@ footer {
   font-size: larger;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
   font-style: oblique;
-  margin: 50px 50px;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 60%;
+  width: 450px;
+  height: 170px;
   grid-column: 1/2;
-  grid-row: 1/3;
   place-self: center;
   background-color: rgb(229, 135, 166);
-  overflow: hidden;
   border-radius: 10px;
+  padding: 20px;
+}
+
+.contenedorhijo_fiesta15 p {
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .contenedorhijodos_fiesta15 {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  height: 50%;
-  grid-column: 3/4;
-  grid-row: 1/3;
+  width: 450px;
+  height: 180px;
+  margin-bottom: 20px;
+  grid-column: 2/3;
   place-self: center;
   background-color: rgb(229, 135, 166);
   border-radius: 10px;
@@ -236,21 +232,14 @@ footer {
 
 .ofrecemos_fiesta15 {
   font-style: oblique;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 5px 0 30px 2px;
 }
 
 .lista_fiesta15 {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px 0;
-}
-
-.consultanos_fiesta15 {
-  display: flex;
-  place-content: center;
-  margin: 130px auto;
-  grid-column: 2/3;
-  grid-row: 2/3;
+  margin: 0 50px 0;
 }
 
 .footer_fiesta15 {
@@ -263,67 +252,82 @@ footer {
 }
 
 .main_fiestasinfantiles_img {
-  background: url(../imagenes/dino.jpg) no-repeat center top 50px/100% 50%;
+  background: url(../imagenes/nenes.jpg) no-repeat center top 0px/100% 50%;
+  background-size: cover;
 }
 
 .cumple_infantil {
   display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
   align-items: center;
   justify-content: center;
   height: 45%;
   width: 75%;
   color: white;
+  transition: 0.9s;
 }
 
 .cumple_infantil:hover {
   font-size: 100px;
-  transition: 0.9s;
 }
 
 .contenedorpadre_fiestasinfantiles {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  padding-top: 100px;
-}
-
-.consultanos_fiestasinfantiles {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  display: flex;
-  place-content: center;
+  padding: 100px 0 30px 0;
+  margin-bottom: 20px;
 }
 
 .parrafo_fiestasinfantiles {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  margin-left: 30px;
+  width: 380px;
+  height: 150px;
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 1/2;
+  place-self: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
   background-color: rgb(167, 234, 167);
   border-radius: 10px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+.parrafo_fiestasinfantiles p span {
+  font-weight: bold;
+}
+.parrafo_fiestasinfantiles .verMas {
+  color: blue;
+}
+
+.parrafo_fiestasinfantiles:hover {
+  width: 380px;
+  height: 220px;
+}
+.parrafo_fiestasinfantiles:hover .verMas {
+  display: none;
 }
 
 .ofrecemos_fiestasinfantiles {
-  grid-column: 3/4;
-  grid-row: 1/3;
+  grid-column: 2/3;
+  grid-row: 1/2;
   font-family: "Courier New", Courier, monospace;
   flex-direction: column;
-  place-content: center;
-  height: 80%;
+  place-self: center;
+  height: 150px;
+  width: 380px;
   background-color: rgb(167, 234, 167);
   border-radius: 10px;
-  width: 72%;
+  padding-top: 10px;
 }
 
 .ofrecer_fiestasinfantiles {
   font-family: sans-serif;
   display: flex;
   place-content: center;
-  margin-right: 30px;
 }
 
 .lista_fiestasinfantiles {
@@ -344,12 +348,12 @@ footer {
 /************CONTACTO*************/
 .header_contacto {
   background-color: rgb(0, 0, 0);
-  height: 10%;
+  height: 80px;
 }
 
 .main_contacto {
   background: linear-gradient(black, rgb(110, 110, 110));
-  height: 73%;
+  height: 100vh;
 }
 
 .menu_hijo_2 {
@@ -374,15 +378,14 @@ footer {
   width: 340px;
   height: 435px;
   margin-top: 15px;
-  padding-bottom: 100px;
 }
 
-.titulo_contacto {
-  position: relative;
-  text-align: center;
+.titulo_container {
+  display: flex;
+  place-content: center;
+  width: 100%;
   background-color: grey;
   color: rgb(239, 239, 233);
-  margin-top: 0;
 }
 
 .name {
@@ -432,43 +435,25 @@ footer {
   height: 5vh;
 }
 
-.menu_principal {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-
 a {
   text-decoration: none;
 }
 
-.menu_principal a:visited {
-  color: white;
-}
-
-.menu_principal a:hover {
-  color: white;
-  transform: scale(1.3);
-  transition: 0.7s;
-}
-
 /********FOOTER*********/
-.footer_padre {
+.footer_generico {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1 fr 1fr;
   grid-template-rows: 1fr;
 }
 
-.contacto {
+.seguinos_redes {
   grid-column: 1/2;
   grid-row: 1/2;
-  font-size: small;
-  padding-left: 30px;
+  text-align: center;
+}
+.seguinos_redes .instagram {
+  color: #ffffff;
 }
 
 .entre_rios {
@@ -478,42 +463,165 @@ a {
   text-align: center;
 }
 
-.seguinos_redes {
-  font-size: 11px;
+.contactanos {
   grid-column: 3/4;
   grid-row: 1/2;
-  justify-self: end;
-  padding-right: 30px;
+  text-align: center;
+}
+.contactanos .gmail {
+  width: 50px;
+  height: 50px;
+  color: #EA4335;
+}
+
+.btn-wpp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
 
 /******MEDIA QUERYS******/
-/******INDEX******/
-@media (max-width: 498px) {
-  /* .menu_padre {
-  flex-direction: column;
-  } */
-  .nav_padre {
-    height: 230px;
+@media (max-width: 952px) {
+  .contenedorpadre_fiesta15 {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedorhijo_fiesta15 {
+    margin-bottom: 20px;
+    width: 450px;
+    height: 170px;
+  }
+  .contenedorhijodos_fiesta15 {
+    margin-top: 20px;
+  }
+  .titulo_container {
+    width: 100%;
+  }
+  .infoyserv {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    margin-top: 100px;
+  }
+  /*******FIESTAS INFANTILES*******/
+  .contenedorpadre_fiestasinfantiles {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    padding: 50px 0 30px 0;
+    gap: 60px;
+  }
+  .casamiento_titulo:hover {
+    font-size: 50px;
+  }
+  .fiesta15_titulo:hover {
+    font-size: 50px;
+  }
+  .cumple_infantil:hover {
+    font-size: 50px;
+  }
+  .medio h1:hover {
+    font-size: 50px;
+  }
+  .medio h3:hover {
+    font-size: 50px;
+  }
+}
+@media (max-width: 720px) {
+  .nav_padre {
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
   }
   .nav_padre a img {
     z-index: 100;
     position: absolute;
     float: left;
-    margin-left: -215px;
+    margin-left: -300px;
     margin-top: 10px;
+    height: 65px;
+    width: 65px;
   }
   .menu_padre {
     flex-direction: column;
     color: rgb(8, 8, 8);
     background-color: rgb(234, 202, 228);
-    margin-top: -50px;
     z-index: 5;
+  }
+  .casamiento_titulo {
+    font-size: 40px;
+    padding-top: 190px;
+  }
+  .casamiento_titulo:hover {
+    font-size: 70px;
+  }
+  .titulo_container {
+    padding-top: 70px;
+  }
+  /******Inicio****/
+  .medio {
+    margin: 90px 0 20px 0;
   }
   .entre_rios {
     display: none;
+  }
+}
+@media (max-width: 600px) {
+  .nav_padre a img {
+    z-index: 100;
+    position: absolute;
+    float: left;
+    margin-left: -200px;
+    margin-top: 10px;
+    height: 65px;
+    width: 65px;
+  }
+  .footer_generico {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .contactanos {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 487px) {
+  .btn-wpp {
+    width: 45px;
+    height: 45px;
+    padding-top: 10px;
+    font-size: 25px;
+  }
+  .nav_padre {
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_padre a img {
+    z-index: 100;
+    position: absolute;
+    float: left;
+    margin-left: -200px;
+    margin-top: 10px;
+    height: 65px;
+    width: 65px;
+  }
+  .menu_padre {
+    flex-direction: column;
+    color: rgb(8, 8, 8);
+    background-color: rgb(234, 202, 228);
+    z-index: 5;
   }
   .footer_padre {
     display: grid;
@@ -522,48 +630,41 @@ a {
     grid-template-rows: 1fr;
     padding: 50px 0 50px 0;
   }
-  .contacto {
-    font-size: small;
-    place-self: center;
-  }
   .contacto .bi-whatsapp .bi-envelope-fill {
     padding-right: -20px;
     font-size: 25px;
   }
-  .seguinos_redes {
-    font-size: small;
-    place-self: center;
-  }
   /*****BODAS*****/
-  .casamiento_titulo {
-    font-size: 40px;
-    padding-top: 270px;
-  }
   .infoyserv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-  }
-  .consultanos_boda {
-    display: none;
+    margin-top: 100px;
   }
   .servicios_boda {
     margin-bottom: 20px;
   }
+  .casamiento_titulo {
+    font-size: 30px;
+    padding-top: 180px;
+  }
+  .casamiento_titulo:hover {
+    font-size: 40px;
+  }
   /****FIESTA 15*****/
+  .contenedorpadre_fiesta15 {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    padding: 0 0 30px 0;
+  }
   .consultanos_fiesta15 {
     display: none;
   }
   .contenedorhijo_fiesta15 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 370px;
+    height: 180px;
   }
   .contenedorhijodos_fiesta15 {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+    width: 370px;
+    margin-top: 50px;
   }
   /*****CUMPLE INFANTIL*****/
   .cumple_infantil {
@@ -575,14 +676,14 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  .ofrecemos_fiestasinfantiles {
+    margin-bottom: 5%;
+  }
   .parrafo_fiestasinfantiles {
     margin-top: 30%;
   }
   .posible {
     font-size: larger;
-  }
-  .consultanos_fiestasinfantiles {
-    display: none;
   }
   /*****CONTACTO*****/
   .main_contacto {
@@ -590,8 +691,33 @@ a {
     place-content: center;
     height: 100%;
   }
-  .menu_principal {
-    display: none;
+  .titulo_container {
+    width: 100%;
+    padding-top: 20px;
+  }
+  /***btn***/
+  .img-wpp {
+    width: 40px;
+    height: 40px;
+    transition: ease 1s;
+    animation: efecto 1.2s infinite;
+    border-radius: 50%;
+  }
+  @keyframes efecto {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.85);
+    }
+    100% {
+      box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    }
+  }
+}
+@media (max-width: 410px) {
+  .nav_padre a img {
+    margin-left: -170px;
+    margin-top: 10px;
+    height: 55px;
+    width: 55px;
   }
 }
 
