@@ -207,7 +207,7 @@ footer {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
   font-style: oblique;
   width: 450px;
-  height: 200px;
+  height: 180px;
   grid-column: 1/2;
   place-self: center;
   background-color: rgb(229, 135, 166);
@@ -222,7 +222,7 @@ footer {
 
 .contenedorhijodos_fiesta15 {
   width: 450px;
-  height: 200px;
+  height: 180px;
   margin-bottom: 20px;
   grid-column: 2/3;
   place-self: center;
@@ -660,11 +660,15 @@ a {
   }
   .contenedorhijo_fiesta15 {
     width: 370px;
-    height: 180px;
+    height: 200px;
   }
   .contenedorhijodos_fiesta15 {
     width: 370px;
     margin-top: 50px;
+  }
+  .contenedorhijo_fiesta15 p {
+    font-size: 14px;
+    line-height: 22px;
   }
   /*****CUMPLE INFANTIL*****/
   .cumple_infantil {
